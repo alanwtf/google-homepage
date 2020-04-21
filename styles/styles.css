@@ -3,7 +3,6 @@
     padding: 0
 }
 body{
-    background-color: lightpink;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -23,19 +22,33 @@ main{
     padding: 10px;
 }
 
+#navbar ul{
+    display: flex;
+    align-items: center;
+}
+
+#navbar i{
+    font-size: 1.3em;
+}
+
 #searchbar{
     width: 400px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+
     margin: 15px auto 10px auto;
     border: 1px solid lightgray;
     height: 35px;
     border-radius: 5px;
-    
-    
 }
+
+#searchbar i{
+    color: rgba(0,0,0,0.80);
+}
+
 #input-search{
-    width: 80%;
+    width: 90%;
     border: none;
 }
 
@@ -46,7 +59,7 @@ main{
 
 .lists li{
     display: inline;
-    padding-right: 8px;
+    padding-right: 10px;
 }
 
 #logo{
@@ -66,9 +79,23 @@ footer{
     
 }
 
+a{
+    text-decoration: none;
+    color: rgba(0,0,0,.80);
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
 footer .footer-lists{
     display: flex;
     justify-content: space-between;
+}
+
+footer .country{
+    display: flex;
+    justify-content: left;
 }
 .btn{
     border: none;
@@ -97,4 +124,10 @@ footer .footer-lists{
 
 .footer-right li{
     padding-left: 20px;
+}
+
+#user-img{
+    border-radius: 50%;
+    border: 1px solid black;
+    height: 20px;
 }
